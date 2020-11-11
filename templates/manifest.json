@@ -1,0 +1,111 @@
+{
+  "version": "7.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "CdkTypescriptStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CdkTypescriptStack.template.json"
+      },
+      "metadata": {
+        "/CdkTypescriptStack/DocumentBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DocumentBucketAE41E5A9",
+            "trace": [
+              "new Bucket (/Users/luis/cdk-projects/cdk-typescript/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1245:22)",
+              "new CdkTypescriptStack (/Users/luis/cdk-projects/cdk-typescript/lib/cdk-typescript-stack.ts:8:20)",
+              "Object.<anonymous> (/Users/luis/cdk-projects/cdk-typescript/bin/cdk-typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/luis/cdk-projects/cdk-typescript/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/luis/cdk-projects/cdk-typescript/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/luis/cdk-projects/cdk-typescript/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/luis/cdk-projects/cdk-typescript/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkTypescriptStack/DocumentsBucketNameExport": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DocumentsBucketNameExport",
+            "trace": [
+              "new CdkTypescriptStack (/Users/luis/cdk-projects/cdk-typescript/lib/cdk-typescript-stack.ts:12:5)",
+              "Object.<anonymous> (/Users/luis/cdk-projects/cdk-typescript/bin/cdk-typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/luis/cdk-projects/cdk-typescript/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/luis/cdk-projects/cdk-typescript/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/luis/cdk-projects/cdk-typescript/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/luis/cdk-projects/cdk-typescript/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkTypescriptStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/luis/cdk-projects/cdk-typescript/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/Users/luis/cdk-projects/cdk-typescript/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/luis/cdk-projects/cdk-typescript/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/luis/cdk-projects/cdk-typescript/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/luis/cdk-projects/cdk-typescript/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/luis/cdk-projects/cdk-typescript/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/luis/cdk-projects/cdk-typescript/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/luis/cdk-projects/cdk-typescript/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:486:12)",
+              "process.emit (/Users/luis/cdk-projects/cdk-typescript/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/CdkTypescriptStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/luis/cdk-projects/cdk-typescript/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:60:27)",
+              "/Users/luis/cdk-projects/cdk-typescript/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/luis/cdk-projects/cdk-typescript/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/luis/cdk-projects/cdk-typescript/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/luis/cdk-projects/cdk-typescript/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/luis/cdk-projects/cdk-typescript/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/luis/cdk-projects/cdk-typescript/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/luis/cdk-projects/cdk-typescript/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:486:12)",
+              "process.emit (/Users/luis/cdk-projects/cdk-typescript/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
