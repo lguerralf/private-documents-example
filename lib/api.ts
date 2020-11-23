@@ -12,6 +12,7 @@ interface DocumentManagementAPIProps {
 }
 
 export class DocumentManagementAPI extends cdk.Construct {
+  public readonly httpApi: apig.HttpApi;
   constructor(
     scope: cdk.Construct,
     id: string,
@@ -47,7 +48,7 @@ export class DocumentManagementAPI extends cdk.Construct {
 
     getDocumentsFunction.addToRolePolicy(bucketContainerPermissions);
 
-    const httpapi = new apig.HttpApi(this, "HttpAPI", {
+    this.httpApi = new apig.HttpApi(this, "HttpAPI", {
       apiName: "document-management-api",
       createDefaultStage: true,
       corsPreflight: {
@@ -57,21 +58,19 @@ export class DocumentManagementAPI extends cdk.Construct {
       },
     });
 
-
     const integration = new LambdaProxyIntegration({
       handler: getDocumentsFunction,
     });
 
-    httpapi.addRoutes({
-      path: '/getDocuments',
+    this.httpApi.addRoutes({
+      path: "/getDocuments",
       methods: [apig.HttpMethod.GET],
-      integration: integration
+      integration: integration,
     });
 
-    new cdk.CfnOutput(this, 'APIEndpoint', {
-      value: httpapi.url!,
-      exportName: 'APIEndpoint'
-    })
-
+    new cdk.CfnOutput(this, "APIEndpoint", {
+      value: this.httpApi.url!,
+      exportName: "APIEndpoint",
+    });
   }
 }

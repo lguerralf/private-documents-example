@@ -4,7 +4,7 @@ import { RemovalPolicy, Tags } from "@aws-cdk/core";
 import { Networking } from "./networking";
 import { DocumentManagementAPI } from "./api";
 import * as path from "path";
-
+import { DocumentManagementWebserver } from './webserver';
 import * as s3Deploy from "@aws-cdk/aws-s3-deployment";
 
 export class CdkTypescriptStack extends cdk.Stack {
@@ -38,5 +38,14 @@ export class CdkTypescriptStack extends cdk.Stack {
     });
 
     Tags.of(api).add("Module", "api");
+
+    const webserver = new DocumentManagementWebserver(this, 'DocumentManagementWebserver', {
+      vpc: networking.vpc,
+      api: api.httpApi
+    });
+
+    Tags.of(webserver).add('Module', 'webserver');
+
+
   }
 }
