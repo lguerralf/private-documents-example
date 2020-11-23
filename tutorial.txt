@@ -53,3 +53,7 @@ https://app.pluralsight.com/course-player?clipId=8ede02b7-9656-405a-a13e-b39e93e
 ## iam roles
 
 npm install @aws-cdk/aws-iam --save
+
+https://app.pluralsight.com/course-player?clipId=ba86f5bf-3f6b-49d5-a1b6-b69c166378c1
+npm install @aws-cdk/aws-apigatewayv2 --save
+https://wjjqc7hcyk.execute-api.us-west-1.amazonaws.com/getDocuments
