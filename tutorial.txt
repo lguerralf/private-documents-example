@@ -1,0 +1,49 @@
+
+
+https://app.pluralsight.com/course-player?clipId=25a8f018-3c81-4baf-be8f-db1ad22b063c
+
+cdk version
+cdk init --template --language=typescript
+cdk bootstrap
+cdk list
+cdk deploy
+cdk destroy
+cdk docs
+cdk diff
+cdk synth
+
+cdk bootstrap --profile lfproduct-dev
+cdk bootstrap // this will use env vars (account number , region )
+
+cdk synth --output=./templates
+
+https://app.pluralsight.com/course-player?clipId=ce3505af-ea68-472c-9503-1165e7a38b6e
+cdk list
+aws cloudformation list-exports
+
+https://app.pluralsight.com/course-player?clipId=8983b867-4003-41d7-bf98-519a5aba62f9
+init > bootstrap > synth > deploy > update > diff > synth > deploy
+
+
+https://app.pluralsight.com/course-player?clipId=82d10f01-5faa-4387-800e-13f6d6be8a4b
+# updating existing cdk
+
+
+https://app.pluralsight.com/course-player?clipId=f82e161e-1b8c-4267-b606-83cd928f2e7e
+## aws tags
+
+https://app.pluralsight.com/course-player?clipId=9d57d362-12d6-4cda-84ac-622926a9402b
+cdk docs
+
+https://app.pluralsight.com/course-player?clipId=9af1afce-7787-47b6-989e-9eb178d4fb13
+# api
+
+
+implementing a lambda function
+https://app.pluralsight.com/course-player?clipId=68b6ed4f-2a4d-406f-8de9-e1d892caa432
+## aws lambda nodejs
+#  npm install parcel@2.0.0-beta.1 --save-dev --save-exact
+
+
+https://app.pluralsight.com/course-player?clipId=8d309dad-6032-4f83-be71-38c83dd35899
+npm install @aws-cdk/aws-s3-deployment --save

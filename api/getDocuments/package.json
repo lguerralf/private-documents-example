@@ -1,0 +1,12 @@
+{
+    "name": "service-get-docu",
+    "main": "index.ts",
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@types/aws-lambda": "^8.10.64",
+        "aws-sdk": "^2.789.0"
+    }
+}
