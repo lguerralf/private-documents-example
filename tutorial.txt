@@ -47,3 +47,9 @@ https://app.pluralsight.com/course-player?clipId=68b6ed4f-2a4d-406f-8de9-e1d892c
 
 https://app.pluralsight.com/course-player?clipId=8d309dad-6032-4f83-be71-38c83dd35899
 npm install @aws-cdk/aws-s3-deployment --save
+
+
+https://app.pluralsight.com/course-player?clipId=8ede02b7-9656-405a-a13e-b39e93eda82c
+## iam roles
+
+npm install @aws-cdk/aws-iam --save

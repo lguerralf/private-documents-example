@@ -1,6 +1,6 @@
 import { Bucket, BucketEncryption } from "@aws-cdk/aws-s3";
 import * as cdk from "@aws-cdk/core";
-import { Tags } from "@aws-cdk/core";
+import { RemovalPolicy, Tags } from "@aws-cdk/core";
 import { Networking } from "./networking";
 import { DocumentManagementAPI } from "./api";
 import * as path from "path";
@@ -13,6 +13,7 @@ export class CdkTypescriptStack extends cdk.Stack {
 
     const bucket = new Bucket(this, "DocumentBucket", {
       encryption: BucketEncryption.S3_MANAGED,
+      // removalPolicy: RemovalPolicy.DESTROY,
     });
 
     new s3Deploy.BucketDeployment(this, "DocumentsDeployment", {
