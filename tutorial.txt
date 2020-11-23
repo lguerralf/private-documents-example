@@ -57,3 +57,13 @@ npm install @aws-cdk/aws-iam --save
 https://app.pluralsight.com/course-player?clipId=ba86f5bf-3f6b-49d5-a1b6-b69c166378c1
 npm install @aws-cdk/aws-apigatewayv2 --save
 https://wjjqc7hcyk.execute-api.us-west-1.amazonaws.com/getDocuments
+
+
+https://app.pluralsight.com/course-player?clipId=3ff9370a-d6c2-4e9b-9bb1-16e07fe9bc57
+web service
+
+
+https://app.pluralsight.com/course-player?clipId=3ff9370a-d6c2-4e9b-9bb1-16e07fe9bc57
+npm run docker:build
+npm run docker:run
+http://localhost:8080/

@@ -1,12 +1,25 @@
 {
-    "name": "service-get-docu",
-    "main": "index.ts",
-    "scripts": {
-        "build": "tsc"
-    },
-    "dependencies": {},
-    "devDependencies": {
-        "@types/aws-lambda": "^8.10.64",
-        "aws-sdk": "^2.789.0"
+  "name": "service-get-docu",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.64",
+    "aws-sdk": "^2.789.0"
+  },
+  "targets": {
+    "cdk-lambda": {
+      "context": "node",
+      "includeNodeModules": {
+        "aws-sdk": false
+      },
+      "sourceMap": false,
+      "minify": false,
+      "engines": {
+        "node": ">= 12"
+      }
     }
+  }
 }
